@@ -25,7 +25,8 @@
 │   └── skills/               # 原生子进程技能
 │       ├── Analysis.md       # 需求分析子进程
 │       ├── Design.md         # 架构设计子进程
-│       └── Session-Handoff.md# 会话交接与备份子进程
+│       ├── humanizer-zh/     # 去除 AI 写作痕迹技能 (实用工具)
+│       └── template/         # 技能编写模板 (SKILL_TEMPLATE.md)
 ├── scripts/                  # 辅助自动化脚本 (备份/维护)
 ├── docs/                     # 架构文档与最佳实践
 └── README.md                 # 本文件
@@ -33,9 +34,26 @@
 
 ## 快速开始
 
-1. 将本项目的 `.trae` 文件夹复制到你的项目根目录。
-2. 打开 `.trae/rules/agent.md`，将 `<your-agent-name>` 替换为你想要的助手名字。
-3. 在 Trae 中开启新会话，你的专属数字孪生助手即可上线！
+如果你想在你的项目中启用 TNAF：
+
+### 方法一：自动注入（推荐）
+1. 将本项目 clone 到本地任意目录。
+2. 在**你自己的项目根目录**中，打开终端并运行：
+   ```bash
+   node /path/to/Trae-Native-Agent-Framework/scripts/init.js
+   ```
+3. 脚本会自动将框架核心规则注入到你的项目中。
+
+### 方法二：手动复制
+1. 将本项目的 `.trae` 文件夹整体复制到你的项目根目录。
+
+### 激活与配置
+1. 打开注入后的 `.trae/rules/agent.md`，将 `<your-agent-name>` 替换为你想要的助手名字。
+2. 在 Trae 中开启新会话，你的专属数字孪生助手即可上线！
+
+## 如何编写自定义 Skill？
+TNAF 强制推行 Coordinator（包工头）模式。如果你的 Agent 变得臃肿，请将任务拆解为技能。
+请参考 `.trae/skills/template/SKILL_TEMPLATE.md` 创建你自己的专属技能。撰写完成后，只要在聊天框说 `/你的技能名` 即可无缝触发。
 
 ## 进化里程碑
 
