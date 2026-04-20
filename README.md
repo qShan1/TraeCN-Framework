@@ -2,7 +2,7 @@
 
 > 专为 Trae IDE 打造的 AI 编程助手框架。基于 Read/Write 工具的结构化记忆 + Skill 技能调度。
 
-[![Version](https://img.shields.io/badge/version-1.0.4-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
+[![Version](https://img.shields.io/badge/version-1.0.7-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 核心理念
@@ -86,7 +86,7 @@ AI 助手将引导你完成：
 | 错误解决 | 记录到 knowledge/errors.md |
 | 关键决策 | 记录到 knowledge/decisions.md |
 | 发现偏好 | 更新 user_scope.md |
-| 会话结束 | 生成 session-handoff.md |
+| 会话结束 | 生成 session-handoff.md + 长期记忆沉淀 |
 
 ## 规则体系
 
@@ -103,6 +103,26 @@ AI 助手将引导你完成：
 | `06-输出规范.md` | 代码风格、对话风格 |
 
 ## 更新日志
+
+### v1.0.7 (2026-04-20)
+
+- ✅ 5轮迭代审计：修复主项目与框架目录一致性
+- ✅ 框架技能文件全部添加执行声明
+- ✅ 会话管理规则更新：添加长期记忆沉淀步骤
+- ✅ 文本去AI化技能 name 统一为 humanizer-zh
+- ✅ README 记忆系统表添加长期记忆沉淀说明
+
+### v1.0.6 (2026-04-20)
+
+- ✅ 添加"触发即执行"核心约束到技能调度规则
+- ✅ 所有技能文档添加执行声明
+- ✅ 解决技能只说不做的问题
+
+### v1.0.5 (2026-04-20)
+
+- ✅ 会话交接技能新增长期记忆沉淀步骤
+- ✅ 记忆系统规则更新，支持会话结束时自动沉淀关键信息
+- ✅ 确保记忆文件持续累积，不再空白
 
 ### v1.0.4 (2026-04-20)
 
