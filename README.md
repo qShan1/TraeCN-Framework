@@ -2,7 +2,7 @@
 
 > 专为 Trae IDE 打造的 AI 编程助手框架。基于本地结构化记忆、Coordinator 编排和 Skill 技能调度。
 
-[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
+[![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 核心理念
@@ -129,6 +129,13 @@ AI 助手将引导你完成：
 | `06-输出规范.md` | 代码风格、对话风格 |
 
 ## 更新日志
+
+### v1.2.0 (2026-04-21)
+
+- ✅ **自动化技能生成 (Skill Creator)**：引入内置 `skill-creator` 技能，支持一键将复杂流程建模为可执行 Skill。
+- ✅ **根因自愈 (Root Cause Self-Healing)**：重构 03 号规则，建立“报错捕获-根因溯源-策略降级-验证交付”闭环，提升极端环境稳定性。
+- ✅ **联想式记忆 (Associative Memory)**：优化 01 号规则，强制执行子任务前的相似模式检索，实现“经验秒复用”。
+- ✅ **版本化 Frontmatter**：规范化所有技能的 YAML 配置，增加版本控制与元数据校验。
 
 ### v1.1.0 (2026-04-21)
 
