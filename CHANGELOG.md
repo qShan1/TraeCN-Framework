@@ -2,6 +2,16 @@
 
 All notable changes to this project are documented in this file.
 
+## [v1.3.4] - 2026-04-22
+
+### Added
+
+- Added `docs/github-release-template.md` as a reusable GitHub Release description template.
+
+### Changed
+
+- Updated `README.md`, `docs/README.md` and `docs/release-checklist.md` to expose the new release template entry.
+
 ## [v1.3.3] - 2026-04-22
 
 ### Added
