@@ -4,6 +4,28 @@ All notable changes to this project are documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Added built-in `视觉设计` skill so the framework can handle posters, covers, slides, illustrations and UI-oriented visual design requests as a first-class workflow.
+- Added `.trae/skills/视觉设计/workflow.md`, `examples.md`, `output-template.md` and the `references/` library so the visual design path includes reusable method, output and review assets.
+- Added `.trae/skills/skill-creator.md` so the documented built-in skill set matches the files that actually exist in the repository.
+
+### Changed
+
+- Split visual design responsibilities from the technical `设计` skill and clarified the routing boundary between system design and art or UI-focused work.
+- Unified pause-like expressions such as "先暂停" and "下次继续" into the existing session-ending flow instead of introducing a separate command path.
+- Aligned `README.md`, `docs/architecture.md` and `.trae/documents/architecture.md` so the documented built-in skill count now reflects the real seven-skill setup and includes `/视觉设计`.
+- Updated lifecycle and autosave rules so lightweight end-session behavior and standard `/结束` behavior share one consistent contract.
+
+### Fixed
+
+- Fixed `.gitignore` root-level rules so `.trae/skills/` content is no longer accidentally excluded from version control.
+
+### Docs
+
+- Expanded the public and internal architecture wording to better explain visual design as an optional skill rather than an overload of technical design.
+- Synced lifecycle rule documents and the closed-loop execution matrix so session-ending terminology stays consistent across the framework.
+
 ## [v1.4.0] - 2026-04-22
 
 ### Added
